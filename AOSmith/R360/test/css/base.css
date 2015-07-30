@@ -1,0 +1,10 @@
+header .top{width: 100%;height:48px;background: #001b38;position:fixed;top:0;}
+header .top .logo{background:url("../../../images/history/logo.png")center left no-repeat;width: 75.5px;height: 20.5px; background-size: contain;top:13.75px;left:5px;display: block;position: relative;}
+header .top .copy{float: right;color: #fff;margin-right: 5px;margin-top: -2px;}
+
+.tools{width:100%;height:40px;position: fixed;bottom:0px;opacity: 1;left:0}
+.tools .maps{position:relative;background:url("../../../images/r360/menu_1.png") center left no-repeat;background-size: 100% 100%;width:130px;height:28px;left:50%;margin-left:-65px;top:50%;margin-top: -20px;}
+
+.maps_big{position:fixed;background:url("../../../images/r360/menu.jpg") center left no-repeat;background-size: 100% 100%;width:297px;height:418.5px;left:50%;margin-left:-148.5px;top:50%;margin-top: -161.25px;opacity:0;}
+
+.p_tips .copy{position:fixed;background:url("../../../images/r360/p1.png") center left no-repeat;background-size: 100% 100%;width:171.5px;height:280.5px;left:50%;margin-left:-85.75px;top:50%;margin-top: -140.25px;opacity:0;}

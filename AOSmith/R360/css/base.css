@@ -1,0 +1,84 @@
+html
+{
+color:#000;
+background:#FFF;
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td
+{
+margin:0;padding:0;
+}
+table /* 设置table 的样式*/
+{
+border-collapse:collapse;
+border-spacing:0;
+}
+fieldset, img
+{
+border:0;
+}
+em, strong
+{
+font-style:normal;
+font-weight:normal;
+}
+li
+{
+list-style:none;
+}
+h1, h2, h3, h4, h5, h6
+{
+font-size:100%;
+font-weight:normal;
+}
+body, input, button, textarea
+{
+font-size:12px;
+font-family:Arial, Helvetica, sans-serif;
+}
+a{ text-decoration:none;outline:none;}
+a:hover{ cursor:pointer;}
+th, td{vertical-align:top;}
+
+html,body{
+  overflow:auto;
+  overflow-x:hidden;
+}
+
+body{font-size: 12px;font-family: Arial, Helvetica, sans-serif;background:#fff;}
+
+header .top{width: 100%;height:48px;background: #001b38;position:fixed;top:0;}
+header .top .logo{background:url("../../images/history/logo.png")center left no-repeat;width: 75.5px;height: 20.5px; background-size: contain;top:13.75px;left:5px;display: block;position: relative;}
+header .top .copy{float: right;color: #fff;margin-right: 5px;margin-top: -2px;}
+
+section .tips {opacity: 1;background: #fff;width: 214px;height: 136px;display: block;position: absolute;top: 48px;z-index: 11;left: 0;}
+section .tips .bg{z-index:11;opacity:0;}
+section .tips .bg p{color: #a8a8a8;text-align: center;}
+section .tips .bg .p1{margin-top: 123px;}
+section .tips .bg .p2{margin-top: 98px;}
+section .tips .bg .p3{margin-top: 98px;}
+
+
+#pano{opacity:0;}
+section .tips .bg{background:url("../../images/r360/tips.jpg")center left no-repeat;width:297px;height: 418.5px; background-size: contain;position:fixed;top:50%;left:50%;margin-left: -148.5px;margin-top:-185.25px;}
+
+
+.m1,.m2{width: 100%;height:100%;position: absolute;overflow:hidden;top:48px;background: #000;}
+section .cover{width: 100%;height:100%;position: absolute;overflow:hidden;top:24px;background: #000;}
+
+.menu .m1,.menu .m2{width: 320px;overflow: hidden;height:154px;left:50%;margin-left:-160px;opacity:1;z-index:10;opacity:0;}
+.menu .m1{position: fixed;background:url("../../images/r360/cover1.jpg") center left no-repeat;background-size: 100% 100%;height:190px;left:50%;margin-left:-160px;}
+.menu .m2{position: fixed;background:url("../../images/r360/cover2.jpg") center left no-repeat;background-size: 100% 100%;height:190px;left:50%;margin-left:-160px;top:50%;}
+
+.menu .m1 .icon{position:relative;background:url("../../images/r360/cover1_icon.png") center left no-repeat;background-size: 100% 100%;width:38px;height:56.5px;left:50%;margin-left:-19px;top:50%;margin-top: -8.5px;}
+.menu .m2 .icon{position:relative;background:url("../../images/r360/cover2_icon.png") center left no-repeat;background-size: 100% 100%;width:67.5px;height:56.5px;left:50%;margin-left:-33.25px;top:50%;margin-top: -8.5px;}
+
+.tools{width:50%;height:40px;position: fixed;bottom:0px;opacity: 0;left:0}
+.tools .maps{position:relative;background:url("../../images/r360/menu_1.png") center left no-repeat;background-size: 100% 100%;width:130px;height:28px;left:50%;margin-left:-10px;top:50%;margin-top: -20px;}
+/*.tools .zoom_big{position:relative;background:url("../../images/r360/menu_2.png") center left no-repeat;background-size: 100% 100%;width:30.5px;height:28px;left:50%;margin-left:38.75px;top:50%;margin-top: -28px;float:left;}*/
+/*.tools .zoom_small{position:relative;background:url("../../images/r360/menu_3.png") center left no-repeat;background-size: 100% 100%;width:30.5px;height:28px;left:50%;margin-left:75.75px;top:50%;margin-top: -28px;float:left;}*/
+
+.maps_big{position:fixed;background:url("../../images/r360/menu.jpg") center left no-repeat;background-size: 100% 100%;width:297px;height:418.5px;left:50%;margin-left:-148.5px;top:50%;margin-top: -161.25px;opacity:0;}
+
+
+

@@ -1,0 +1,47 @@
+<krpano version="1.16">
+	
+	<include url="skin/defaultskin.xml" />
+	
+	<view hlookat="0" vlookat="0" maxpixelzoom="1.0" fovmax="150" limitview="auto" />
+
+	<preview url="2.tiles/preview.jpg" />
+
+	<image>
+		<cube url="2.tiles/pano_%s.jpg" />
+		<mobile>
+			<cube url="2.tiles/mobile_%s.jpg" />
+		</mobile>
+	</image>
+
+	<hotspot name="spot"
+             url="phot.png"
+             distorted="true"
+             ath="60"
+             atv="-4"
+             scale="0.8"
+             rx="0" ry="45" rz="0"
+             zorder="1"
+             onclick="looktohotspot(get(name), 60);"
+             />
+             
+    <hotspot name="spot_icon"
+             url="p_tips.png"
+             distorted="true"
+             ath="60"
+             atv="8"
+             scale="0.4"
+             rx="0" ry="45" rz="0"
+             zorder="1"
+             onclick="js(showProductInfo());"
+             />      
+             
+    <action name="copyhotspotsettingsfrom">
+        copy(distorted, hotspot[%1].distorted);
+        copy(ath, hotspot[%1].ath);
+        copy(atv, hotspot[%1].atv);
+        copy(scale, hotspot[%1].scale);
+        copy(rx, hotspot[%1].rx);
+        copy(ry, hotspot[%1].ry);
+        copy(rz, hotspot[%1].rz);
+    </action>
+</krpano>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>A.O.Simth</title>
+	<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<meta http-equiv="x-ua-compatible" content="IE=edge" />
+
+	<!-- 关闭电话号码连接 -->
+    <meta name="format-detection" content="telephone=no"/>
+    <!-- 使用viewport在手机浏览器上的控制布局 -->
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="description" content="A.O.Simth">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" href="favicon.ico">
+
+
+	<style>
+		@-ms-viewport { width: device-width; }
+		@media only screen and (min-device-width: 800px) { html { overflow:hidden; } }
+		html { height:100%; }
+		body { height:100%; overflow:hidden; margin:0; padding:0; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#FFFFFF; background-color:#000000; }
+	</style>
+
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+</head>
+<body>
+
+<script src="2.js"></script>
+
+<div id="pano" style="width:100%;height:100%;">
+	<noscript><table style="width:100%;height:100%;"><tr style="valign:middle;"><td><div style="text-align:center;">ERROR:<br/><br/>Javascript not activated<br/><br/></div></td></tr></table></noscript>
+	<script>
+		embedpano({swf:"2.swf", xml:"2.xml", target:"pano", html5:"prefer", passQueryParameters:true});
+	</script>
+</div>
+
+<!-- add myUi -->
+	<header>
+        <div class="top">
+            <div class="logo"></div>
+            <p class="copy">返回官网 &lt</p>
+        </div>
+    </header>
+    <section>
+    	<div class="tools">
+    		<div class="maps"></div>
+    		<!-- <div class="zoom_big"></div> -->
+    		<!-- <div class="zoom_small"></div> -->
+    	</div>
+    	<!-- 点击内部产品详情 -->
+    	<div class="p_tips">
+    		<div class="copy"></div>
+    		<div class="close"></div>
+    	</div>
+    	<!-- 体验馆导航图 -->
+    	<div class="maps_big"></div>
+    </section>
+
+	<script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+    <!-- js -->
+    <script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>

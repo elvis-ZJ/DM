@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>A.O.Simth</title>
+    <!-- 关闭电话号码连接 -->
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" href="favicon.ico">
+
+    <link href="css/video-js.css" rel="stylesheet" type="text/css">
+    <script src="js/video.js"></script>
+
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- bass.css -->
+    <link rel="stylesheet" type="text/css" href="css/history/bass.css">
+    <link rel="stylesheet" type="text/css" href="css/history/main.css">
+  </head>
+  <body>
+    <section>
+      <div class="cover">
+        <div class="cover_1 cover_con"><div class="icon"></div><div class="copy">源于对理念的坚守，源于对产品的持续创新，<br>这是A.O.史密斯141周年的成功之道，进入A.O.史密斯的世界，了解更多</div></div>
+        <div class="cover_2 cover_con"><div class="icon"></div><div class="copy">从1874年到2014年，从商用领域到家用领域，<br>我们一路探索与创新，在此，邀您与我们一路，感受独属于A.O.史密斯的品牌发展之道</div></div>
+      </div>
+      <div class="cover_1_main">
+          <div class="cover_1 cover_con"></div>
+          <div class="cover_2 cover_con"></div>
+          <div class="cover_3 cover_con"></div>
+      </div>
+      <div class="cover_2_main">
+          <div class="cover_1 cover_con"><div class="icon"></div><div class="copy">A.O.史密斯140年创新记录</div></div>
+          <div class="cover_2 cover_con"><div class="icon"></div><div class="copy">140年研发片广告</div></div>
+          <div class="cover_3 cover_con"><div class="icon"></div><div class="copy">A.O.史密斯2010修改版-访言篇国语</div></div>
+      </div>
+
+      <video id="my_video_1" class="video-js vjs-default-skin" preload="auto" data-setup="{}">
+            <source src="http://zl.hwpan.com/u13125716/aosmith_141.mp4" type='video/mp4' />
+            <source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm' />
+      </video>
+      <video id="my_video_2" class="video-js vjs-default-skin" preload="auto" data-setup="{}">
+          <source src="http://zl.hwpan.com/u13125716/aosmith_141.mp4" type='video/mp4' />
+          <source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm' />
+      </video>
+      <video id="my_video_3" class="video-js vjs-default-skin" preload="auto" data-setup="{}">
+          <source src="http://zl.hwpan.com/u13125716/aosmith_141.mp4" type='video/mp4' />
+          <source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm' />
+      </video>
+      </div>
+    </section>
+    <header>
+        <div class="top">
+            <div class="logo"></div>
+            <p class="copy">返回官网 &lt</p>
+        </div>
+    </header>
+
+    <!-- <footer>
+      <div>
+        <p class="footCopy">A.O.Smith (China) Water Heater Co., Ltd. All Rights Reserved.</p>
+      </div>
+    </footer> -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/zepto.min.js"></script>
+    <script src="js/history/main.js"></script>
+
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+          resizeHandler();
+          $(window).resize(function() {
+            resizeHandler();
+          });
+
+          
+          $('.cover .cover_1').on('click',function(event){
+              self.location="./history_cover.html?p=history";
+          });
+
+          $('.cover_1_main .cover_con:eq(0)').on('click',function(event){
+              self.location="./history.html";
+          });
+
+          $('.cover .cover_2').on('click',function(event){
+               self.location="./history_cover.html?p=video";
+          });
+
+          $('.cover_2_main .cover_con:eq(0)').on('click',function(event){
+              playVidoe(1);
+          }); 
+          $('.cover_2_main .cover_con:eq(1)').on('click',function(event){
+              playVidoe(2);
+          }); 
+          $('.cover_2_main .cover_con:eq(2)').on('click',function(event){
+              playVidoe(3);
+          });          
+
+      });
+
+      function init(){
+          var temp_cover_left=-$(window).height()/2/232.5*320*0.5;
+          $('.cover .cover_1').css("margin-left",-$(window).width()*2+"px");
+          $('.cover .cover_1').animate({"margin-left":temp_cover_left+"px","opacity":1}, 500);
+          $('.cover .cover_2').css("margin-left",$(window).width()+"px");
+          $('.cover .cover_2').animate({"margin-left":temp_cover_left+"px","opacity":1}, 500);
+          $('.cover_1_main').hide();
+          $('.cover_2_main').hide();
+      }
+
+      // 自适应
+      function resizeHandler(){
+          // cover
+          var cover_1=$('.cover .cover_1');
+          var cover_2=$('.cover .cover_2');
+          var cover_h=$(window).height()/2;
+          $('section .cover').css("height",($(window).height()-48/2)+"px");
+          cover_1.css("height",cover_h+"px");
+          cover_1.css("width",cover_h/232.5*320+"px");
+          cover_1.css("margin-left",-cover_h/232.5*320*0.5+"px");
+
+          cover_2.css("height",cover_h+"px");
+          cover_2.css("width",cover_h/232.5*320+"px");
+          cover_2.css("margin-left",-cover_h/232.5*320*0.5+"px");
+
+
+          var cover_h_m=($(window).height()-48)/3;
+          $('.cover_1_main').css("height",($(window).height()-48)+"px");
+          $('.cover_2_main').css("height",($(window).height()-48)+"px");
+          // cover_1_main
+          $.each($('.cover_1_main .cover_con'), function(index, val) {
+              $(this).css("height",cover_h_m+"px");
+              $(this).css("width",cover_h_m/154*320+"px");
+              $(this).css("margin-left",-cover_h_m/154*320/2+"px");
+
+              $('#my_video_'+(index+1)).css("width",(cover_h_m/154*320)+"px");
+              $('#my_video_'+(index+1)).css("height",(cover_h_m)/3+"px");
+              
+              $('#my_video_'+(index+1)).css("left","50%");  
+              $('#my_video_'+(index+1)).css("margin-left",(-$(window).width()/2)+"px");
+
+              if($(window).width()>40){
+                console.log('sss');
+                
+                $('#my_video_'+(index+1)+"_html5_api").css("width",($(window).width())+"px");
+                $('#my_video_'+(index+1)+"_html5_api").css("height",($(window).height()-48)/3+"px");
+                $('#my_video_'+(index+1)+"_html5_api").css("left","50%");
+                $('#my_video_'+(index+1)+"_html5_api").css("margin-left",(-$(window).width()/2)+"px");
+              }
+
+          });
+
+          // cover_2_main
+          $.each($('.cover_2_main .cover_con'), function(index, val) {
+              $(this).css("height",cover_h_m+"px");
+              $(this).css("width",cover_h_m/154*320+"px");
+              $(this).css("margin-left",-cover_h_m/154*320/2+"px");
+          });
+
+      }
+
+      setTimeout(function(){
+          if(GetQueryString("p")){
+              if(GetQueryString("p")=="history"){
+                  $('section .cover').hide()
+                  $('.cover_1_main').css("display","block");
+                  $('.cover_1_main').show();
+                  $.each($('.cover_1_main .cover_con'), function(index, val) {
+                      var temp_cover_top_s=0;
+                      $(this).css("top",$(window).height()+"px");
+                      $(this).animate({"top":temp_cover_top_s+"px","opacity":1}, 500+(index*200));
+                  });
+              }else if(GetQueryString("p")=="video"){
+                  resizeHandler();
+                  $('section .cover').hide()
+                  $('.cover_2_main').css("display","block");
+                  $('.cover_2_main').show();
+                  $.each($('.cover_2_main .cover_con'), function(index, val) {
+                      var temp_cover_top_s=0;
+                      $(this).css("top",$(window).height()+"px");
+                      $(this).animate({"top":temp_cover_top_s+"px","opacity":1}, 500+(index*200));
+                  });
+              }
+          }else{
+            init();
+          }
+      },200);
+
+      // 获取地址栏参数
+      function GetQueryString(name)
+      {
+           var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+           var r = window.location.search.substr(1).match(reg);
+           if(r!=null)return  unescape(r[2]); return null;
+      }
+
+      // 视频
+      function playVidoe(id){
+          var myPlayer1 = _V_("my_video_"+1);
+          var myPlayer2 = _V_("my_video_"+2);
+          var myPlayer3 = _V_("my_video_"+3);
+
+          myPlayer1.pause();
+          myPlayer2.pause();
+          myPlayer3.pause();
+
+          $.each($('.video-js'), function(index, val) {
+            $('#my_video_'+(index+1)).css("display","none");
+            if($('#my_video_'+index).css("display")=="block"){
+              $('#my_video_'+index).animate({"opacity":0},500,function(){
+                  $(this).css("display","none");
+              });
+            }
+          });
+
+          $('#my_video_'+id).css("opacity",0);
+          $('#my_video_'+id).css("display","block");
+          
+          var myPlayer = _V_("my_video_"+id);
+          myPlayer.currentTime(0);
+          myPlayer.play();
+
+          myPlayer.width($(window).width());
+          myPlayer.height(($(window).height()-48)/3);
+
+          $('#my_video_'+id).stop().animate({"opacity":1},500);
+          $('#my_video_'+id).css("top",($(window).height()-48)/3*(id-1)+48+"px");
+
+          $('#my_video_'+id).on('click',function(event) {
+              myPlayer.pause();
+              $('#my_video_'+id).css("opacity",0);
+              $('#my_video_'+id).css("display","none");
+          });
+          
+      }
+
+      // 视频
+      function flvOverHandler(){
+        console.log('close');
+      }
+
+    </script>
+  </body>
+</html>

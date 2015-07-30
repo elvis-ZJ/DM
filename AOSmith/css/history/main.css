@@ -1,0 +1,29 @@
+.myVideo{width: 100%;height:100%;position: absolute;overflow:hidden;top:24px;display:none;top:48px;}
+.video-js{display:none;top:48px;overflow:hidden;left:50%;margin-left:-160px;}
+
+
+
+.cover_1_main,.cover_2_main{width: 100%;height:100%;position: absolute;overflow:hidden;top:48px;background: #000;display: none;}
+section .cover{width: 100%;height:100%;position: absolute;overflow:hidden;top:24px;background: #000;}
+
+.cover .cover_con,.cover_1_main .cover_con,.cover_2_main .cover_con{width: 320px;overflow: hidden;}
+.cover .cover_1{position: relative;background:url("../../images/history/cover_1.jpg") center left no-repeat;background-size: 100% 100%;height:232.5px;left:50%;margin-left:-160px;opacity:0;}
+.cover .cover_2{position: relative;background:url("../../images/history/cover_2.jpg") center left no-repeat;background-size: 100% 100%;height:231.5px;left:50%;margin-left:-160px;opacity:0;}
+
+.cover .cover_1 .icon{background:url("../../images/history/cover_1_icon.png") center left no-repeat;background-size: 100% 100%;width:38px;height:56.25px;left:50%;top:50%;margin-left: -19px;margin-top: -48.125px;position: relative;}
+.cover .cover_2 .icon{background:url("../../images/history/cover_2_icon.png") center left no-repeat;background-size: 100% 100%;width:38px;height:56.25px;left:50%;top:50%;margin-left: -19px;margin-top: -48.125px;position: relative;}
+
+.cover .copy{position: relative;color: #ededed;text-align: center;width: 300px;left:50%;top:50%;margin-left: -150px;margin-top: 10px;}
+
+.cover_1_main .cover_con,.cover_2_main .cover_con{width: 320px;overflow: hidden;height:154px;left:50%;margin-left:-160px;opacity:0;}
+
+.cover_1_main .cover_1{position: relative;background:url("../../images/history/cover_1_c1.jpg") center left no-repeat;background-size: 100% 100%;}
+.cover_1_main .cover_2{position: relative;background:url("../../images/history/cover_1_c2.jpg") center left no-repeat;background-size: 100% 100%;}
+.cover_1_main .cover_3{position: relative;background:url("../../images/history/cover_1_c3.jpg") center left no-repeat;background-size: 100% 100%;}
+
+.cover_2_main .cover_1{position: relative;background:url("../../images/history/cover_2_v1.jpg") center left no-repeat;background-size: 100% 100%;}
+.cover_2_main .cover_2{position: relative;background:url("../../images/history/cover_2_v2.jpg") center left no-repeat;background-size: 100% 100%;}
+.cover_2_main .cover_3{position: relative;background:url("../../images/history/cover_2_v3.jpg") center left no-repeat;background-size: 100% 100%;}
+
+.cover_2_main .cover_con .icon{position: relative;background:url("../../images/history/cover_2_v_icon.png") center left no-repeat;background-size: 100% 100%;width:46px;height:46px;left:50%;top:50%;margin-left:-23px;margin-top:-23px;}
+.cover_2_main .cover_con .copy{position: relative;width: 300px;color: #d4d4d4;text-align: center;left: 50%;top: 50%;margin-left: -150px;margin-top: 10px;}

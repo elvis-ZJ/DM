@@ -1,0 +1,7 @@
+section .main .p_kv .bg{position: relative;background: url("../../images/product_2/p_kv1.jpg") center left no-repeat;background-size: contain;width: 277px;height:298px;left:50%;top:38px;margin-left:-138.5px;}
+section .main .pages{position: relative;background-size: contain;width: 320px;height: 65.5px;left:50%;top:0px;margin-left:-160px;}
+
+@media (max-height:480px){
+	.video_btn{bottom:49px;}
+	section .main .p_kv .bg {top:-37px;}
+}
